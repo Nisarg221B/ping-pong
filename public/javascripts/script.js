@@ -4,7 +4,8 @@ const context = canvas.getContext('2d');
 // const socket = io('http://localhost:3000');
 // by default socket io connects to the socket server at the same host, at the same address
 // therefore when serving this file via a server its not needed to explicitly mention the address
-const socket = io();
+// const socket = io(); // by default at the same address
+const socket = io('/pong'); //mentioning the namespace ( defualt namespace = "/")
 let isReferee = false;
 let paddleIndex = 0;
 
